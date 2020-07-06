@@ -25,7 +25,21 @@ class Palindrome {
     System.out.print("In:");
     String s = inp.nextLine();
    	//write your code below
-   	
-   	
-  }
+   	    String textoPlano="", textoAlReves="";
+    String[] partes=s.split(" ");
+    
+   for(String parte:partes){
+       parte=parte.toLowerCase();
+       parte=parte.replace("á","a");
+       parte=parte.replace("ñ","n");
+       parte=parte.replace(",","");
+       parte=parte.replace(".","");
+       textoPlano+=parte;
+   }
+
+   for(int i=textoPlano.length()-1; i >=0; i--){
+       textoAlReves+=textoPlano.substring(i,i+1);
+   }
+
+   System.out.println(textoPlano.equals(textoAlReves));
 }
