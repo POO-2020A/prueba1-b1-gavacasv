@@ -32,5 +32,14 @@ class MixedCase {
     System.out.print("In:");
     String s = inp.nextLine();
     //write your code below
+    String salida="", comp;
+    for(int i=0; i < s.length(); i++){
+        comp=s.substring(i, i+1);
+        if(i%2!=0){
+          comp=comp.toUpperCase();  
+        }
+        salida+=comp;
+    }
+    System.out.print(salida);
   }
 }
