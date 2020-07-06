@@ -31,8 +31,12 @@ class SumOddsRange {
     int num1 = s.nextInt();
     System.out.print("#2: ");
     int num2 = s.nextInt();
-    //start below
-    
-    
+    int sumatorio=0;
+    for(int i=num1; i <=num2; i++){
+        if(i%2!=0){
+            sumatorio+=i;
+        }
+    }
+    System.out.println(sumatorio);
   }
 }
