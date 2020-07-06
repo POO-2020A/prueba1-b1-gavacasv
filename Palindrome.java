@@ -42,4 +42,5 @@ class Palindrome {
    }
 
    System.out.println(textoPlano.equals(textoAlReves));
+  }
 }
